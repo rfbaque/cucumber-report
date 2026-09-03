@@ -1,4 +1,4 @@
-# API Fake + Cucumber + reporte HTML/PDF
+# Ejemplo de APi de prueba + Cucumber + reporte HTML/PDF
 
 Proyecto MVP para reutilizar la reportería en repositorios de APIs. Incluye:
 
