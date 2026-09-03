@@ -1,4 +1,4 @@
-# Ejemplo de APi de prueba + Cucumber + reporte HTML/PDF
+# Ejemplo de API — Playwright + Cucumber + Reportes HTML / PDF
 
 Proyecto MVP que simula el consumo de un endpoint y genera reportes en formato HTML y PDF utilizando Cucumber. El proyecto incluye:
 
