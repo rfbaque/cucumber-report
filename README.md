@@ -1,6 +1,6 @@
 # Ejemplo de APi de prueba + Cucumber + reporte HTML/PDF
 
-Proyecto MVP para reutilizar la reportería en repositorios de APIs. Incluye:
+Proyecto MVP que simula el consumo de un endpoint y genera reportes en formato HTML y PDF utilizando Cucumber. El proyecto incluye:
 
 - Endpoint de prueba `GET /usuarios/1`, implementado con el módulo HTTP nativo de Node para simular una api real.
 - Escenario BDD con estructura `Given`, `When`, `Then`.
@@ -8,7 +8,6 @@ Proyecto MVP para reutilizar la reportería en repositorios de APIs. Incluye:
 - Hooks `Before`, `After`, `BeforeAll` y `AfterAll`.
 - Evidencia de request, response y status adjunta a cada escenario.
 - Reportes HTML y PDF generados desde el mismo resultado JSON de Cucumber.
-- La clase `pdfStyles.ts` con los estilos necesarios para el maquetado del reporte.
 
 ## Requisitos
 
@@ -23,7 +22,7 @@ npx playwright install chromium
 ```
 
 ## Ejecución completa
-Este proyecto simula la generación del reporte automaticamente una vez que finaliza la ejecución de pruebas automáticas. En caso de tener una lógica separada a la de este proyecto. Para la implementación en tu proyecto si tienes una lógica distinta de generación del reporte, no se debe considerar este script 
+Este ejemplo genera el informe automaticamente una vez que finaliza la ejecución de la prueba automatizada.
 
 ```bash
 npm run test:report
