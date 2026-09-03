@@ -89,7 +89,7 @@ flowchart LR
         JSON["test-results/cucumber-report.json"]
         Report["src/config/reporte/reporte.ts"]
         Styles["src/config/reporte/pdfStyles.ts"]
-        Logo["src/config/reporte/logoBg.png"]
+        Logo["src/config/reporte/logo.png"]
         Result["HTML + PDF final"]
     end
 
