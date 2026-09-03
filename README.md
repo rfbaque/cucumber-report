@@ -40,7 +40,7 @@ test-results/
 También se pueden ejecutar las fases por separado:
 
 ```bash
-npm test
+npm run test
 npm run report
 ```
 
