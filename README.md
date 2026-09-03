@@ -51,7 +51,7 @@ reporteria-api-ejemplo/
 ├── src/
 │   ├── config/
 │   │   ├── reporte/
-│   │   │   ├── logoBg.png
+│   │   │   ├── logo.png
 │   │   │   ├── pdfStyles.ts
 │   │   │   └── reporte.ts
 │   │   └── test-runner.ts
