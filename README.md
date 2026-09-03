@@ -1,4 +1,4 @@
-# Ejemplo mínimo: API + Cucumber + reporte HTML/PDF
+# Ejemplo MVP: API + Cucumber + reporte HTML/PDF
 
 Proyecto MVP para reutilizar la reportería en repositorios de APIs. Incluye:
 
@@ -126,7 +126,7 @@ Este fragmento del hook `After` es clave porque no solo guarda el resultado del 
 
 ### 2) Generación del reporte HTML
 
-El script `scripts/test-and-report.ts` lee el JSON generado por Cucumber y usa `cucumber-html-reporter` para producir un HTML base con metadata de ejecución, nombre del proyecto, ambiente, URL de la API, responsable y fecha.
+El script `src/config/test-runner.ts` lee el JSON generado por Cucumber y usa `cucumber-html-reporter` para producir un HTML base con metadata de ejecución, nombre del proyecto, ambiente, URL de la API, responsable y fecha.
 
 Después de crear ese archivo, se aplica una etapa de “estilo” con `styleMetadata()`, que inyecta CSS para mejorar la distribución de los bloques de metadata y evitar que el contenido se vea desordenado.
 
@@ -146,7 +146,7 @@ Estas mejoras no son solo cosméticas: permiten que el reporte final sea usable 
 ## Adaptarlo a otra API
 
 1. Copia `src/config/reporte/` y la configuración `format` de `cucumber.js` al proyecto destino.
-2. Copia `scripts/test-and-report.ts` al proyecto destino si deseas incluir la logica para que tu reporte se genere automaticamente despues de la ejecución.
+2. Copia `scripts/test-runner.ts` al proyecto destino si deseas incluir la logica para que tu reporte se genere automaticamente despues de la ejecución. Si ya tienes definido un esquema de generación de reporte, haz caso omiso a este archivo.
 3. Conserva `generarEvidenciaHtml(...)` dentro de `test/hook/hooks.ts`. Si la mueves a un directorio helper/utils, debes agregar la referencia respectiva.
 4. Sustituye el fake API y los steps por el cliente HTTP real del proyecto.
 5. Cambia el logo en `src/config/reporte/logoBg.png` si corresponde.
