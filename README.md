@@ -160,11 +160,11 @@ Las siguientes variables se incluyen en el archivo .env. Si no las incluyes debe
 
 ```bash
 REPORT_TITLE="Informe de Pruebas Automatizadas"
-REPORT_APPLICATION="BANCA EMPRESAS"
+REPORT_APPLICATION="MI APLICACION"
 REPORT_URL="https://api.ejemplo.com"
-REPORT_PLATFORM="APIS CAPA -HUB"
+REPORT_PLATFORM="APIS CAPA - XYZ"
 REPORT_ENVIRONMENT="Desarrollo"
-AUTOMATIZADOR="Equipo de Automatización"
-REPORT_LOGO="src/config/reporte/logoBg.png"
+AUTOMATIZADOR="RONALD BAQUE"
+REPORT_LOGO="src/config/reporte/logo.png"
 ```
 
